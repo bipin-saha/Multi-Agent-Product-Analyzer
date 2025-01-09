@@ -1,10 +1,10 @@
 # DuckDuckGo Search Agent (G2, Crunchbase, Competitor, Competitors Comparison, Latest News, Business Insight)
-# G2 Review Extraction API
+# G2 Review Extraction API                                      Done
 # Crunchbase Extraction SCRAPE
-# Competitor Extraction DDS
+# Competitor Extraction DDS                                     Done
 # Competitors Comparison Extraction DDS
 # Latest News Extraction DDS
 # Business Insight Extraction DDS
-# SWOT Analysis LLM
+# SWOT Analysis LLM                                             Done
 # Competitor Feature Comparison LLM
 # Business Recommendation
