@@ -16,7 +16,9 @@ prompts:
           "instruction_2": "<modify the query into another short specific instructions for interent search>"
       }
       Only provide this JSON output. Do not include anything else.
-  another_prompt_key:
-    description: "Example of another prompt's purpose."
+  summarize_text:
+    description: "Analyze a website text, of a company or product, and summarize the key points."
     template: |
-      This is an example of another prompt that you might want to use for a different task.
+      You are a helpful AI Assistant capable of analyzing a website text, 
+      of a company or product, and summarize the key points from business aspects. Keep important things
+      and numerical insights for further processing.
