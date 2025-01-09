@@ -1,0 +1,386 @@
+{
+    "original_status": 200,
+    "pc_status": 200,
+    "url": "https://www.g2.com/products/deepgram/reviews",
+    "body": {
+        "productName": "Deepgram",
+        "productDescription": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call. Our models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can: \ud83d\udd0a Process live-streaming or pre-recorded audio \ud83c\udf0e Transcribe in dozens of languages \u2699\ufe0f Train custom models for unique use cases \ud83d\udd11 Access deep NLU with a unified API \ud83d\udcbb Build in any programming language with our SDKs \u2705 Deploy on-prem or on DG\u2019s managed cloud \ud83d\udcc8 Get scalable GPU infrastructure for training and inference Get started with $200 in free credit (up to 45,000 minutes) of free transcription and understanding.",
+        "productLink": "https://www.g2.com/products/deepgram/reviews",
+        "starRating": "4.6",
+        "reviewsCount": 270,
+        "discussionsCount": 6,
+        "ratings": [
+            {
+                "rating": "5 star",
+                "count": 203
+            },
+            {
+                "rating": "4 star",
+                "count": 63
+            },
+            {
+                "rating": "3 star",
+                "count": 3
+            },
+            {
+                "rating": "2 star",
+                "count": 1
+            },
+            {
+                "rating": "1 star",
+                "count": 0
+            }
+        ],
+        "productLogo": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b64138913303992f1f81faccd5e3caea/deepgram.png",
+        "images": [
+            "https://i.ytimg.com/vi/dYQydFoZglQ/mqdefault.jpg",
+            "https://i.ytimg.com/vi/QtIF4skOXrM/mqdefault.jpg",
+            "https://i.ytimg.com/vi/PSaVX6ST-FM/mqdefault.jpg",
+            "https://i.ytimg.com/vi/mTK8dIBJIqg/mqdefault.jpg",
+            "https://i.ytimg.com/vi/VPdvo6fF0zc/mqdefault.jpg"
+        ],
+        "videoReviews": [
+            {
+                "authorName": "Shivkant S.",
+                "reviewCaption": "Think Audio to Text go for the Deepgram",
+                "reviewLink": "https://www.g2.com/survey_responses/deepgram-review-5037543#survey-response-5037543",
+                "reviewThumbnail": "https://www.g2.com/assets/ffffff-68c767501b5ac7a093a8f6741d87dc2c95eb7874a1fc64080e1234aa02f2b418.png"
+            }
+        ],
+        "sentiments": {
+            "pros": [
+                {
+                    "name": "Speed",
+                    "count": 51
+                },
+                {
+                    "name": "Accuracy",
+                    "count": 32
+                },
+                {
+                    "name": "Ease of Use",
+                    "count": 31
+                },
+                {
+                    "name": "Real-time Transcription",
+                    "count": 26
+                },
+                {
+                    "name": "API Usability",
+                    "count": 22
+                }
+            ],
+            "cons": [
+                {
+                    "name": "Improvement Needed",
+                    "count": 19
+                },
+                {
+                    "name": "Limited Language Support",
+                    "count": 14
+                },
+                {
+                    "name": "Poor Transcription Accuracy",
+                    "count": 12
+                },
+                {
+                    "name": "Inaccuracy",
+                    "count": 7
+                },
+                {
+                    "name": "Limited Options",
+                    "count": 7
+                }
+            ]
+        },
+        "reviews": [
+            {
+                "autor": "Ashley W.",
+                "authorTitle": "Speech Recognition EngineerEvents ServicesMid-Market(51-1000 emp.)",
+                "stars": "4.5",
+                "authorLink": "https://www.g2.com/users/dcea7e18-b72a-4031-ba04-73df474097bf",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Review source: Seller invite",
+                    "Incentivized Review"
+                ],
+                "reviewText": "Transcription made easy for teams and individuals in our company",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10693812",
+                "reviewDate": "Dec 28, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "I love that Deepgram captures the audio and video, transcribing them with such accuracy. It\u2019s worked great for transcribing client meetings and internal discussions. With the features to store and share transcriptions with platforms such as Google Drive, it\u2019s easy to integrate with. If you attend live meetings or events the best part is the ability to transcribe in real time. Moreover, the AI itself gets better, so each transcription gets better and better as time progresses. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "One thing I\u2019ve found annoying in Deepgram is that sometimes background noise causes problems with the transcription. Essentially the system works fine, but sometimes when a long transcription job goes a little long the system will lag. I wish I could also customize more to get the outputs how I would like them. They work well, but they still miss context at times, especially with technical or domain specific words and you still need to edit them. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Using Deepgram, we have found it has made transcription much simpler, saving us a huge amount of time and effort. I don\u2019t need to transcribe recordings manually anymore and I can focus on other important work. We\u2019ve streamlined our workflow, where my team instantly have access to accurate text from meetings and calls, allowing them to collaborate more efficiently and avoid the important details falling between the cracks. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Srinivas S.",
+                "authorTitle": "CEOSmall-Business(50 or fewer emp.)",
+                "stars": "5.0",
+                "authorLink": "https://www.g2.com/users/44555c74-954b-4bbc-81eb-f01f0ddbf6c7",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Organic"
+                ],
+                "reviewText": "Deepgram is What We Were Looking for All Along",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10352556",
+                "reviewDate": "Oct 10, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "Comparison with Amazon Transcribe:"
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "Nothing so far that we found. We have been completely happy with the service. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Voice recognition of customer sales and support calls. Both post call analysis as well as real time analysis. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Jose C.",
+                "authorTitle": "Content operations leadMedia ProductionSmall-Business(50 or fewer emp.)",
+                "stars": "4.5",
+                "authorLink": "https://www.g2.com/users/e648a5bc-6be2-40d9-974c-e262c3a089f4",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Review source: Seller invite",
+                    "Incentivized Review"
+                ],
+                "reviewText": "Transcribing audio is now so much faster",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10643604",
+                "reviewDate": "Dec 13, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "With their speech recognition Deepgram is incredibly fast and incredibly accurate, making listening to meeting and call transcriptions much easier. I also like that it integrates very smoothly with Slack and Zoom giving easy access to transcriptions right inside the app. This ability to work with many different accents and dialects is critical to our diverse team. Furthermore, the simple setup and easy to use API lends itself to customization of the software into answering precisely our workflow needs. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "The only flaw I saw with Deepgram as it misinterprets an audio with lots of background noise. It does well on quiet environments but the transcription quality falls when there is noise interference. And it sometimes misunderstands technical parlance, which I have to correct by default. It\u2019s not all bad though, it would simply be nice for customer support to be a little quicker because sometimes they take a while to respond to more complex questions. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Deepgram significantly improved our workflow through elimination and automation of meeting transcription and call transcription. We can now save a ton of time by spending it reviewing transcripts, rather than spending hours transcribing audio. It also allows us to keep on meeting documentation and follow ups and make sure that nothing is missed. Transcriptions are no longer prone to errors, the accuracy and speedy level helps us to communicate within our team and makes our productivity better. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Daniel H.",
+                "authorTitle": "Chief Financial OfficerSmall-Business(50 or fewer emp.)",
+                "stars": "4.5",
+                "authorLink": "https://www.g2.com/users/9afff114-319a-4888-9944-98658f19c68f",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Organic"
+                ],
+                "reviewText": "High quality audio transcription for enterprise grade application",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10542465",
+                "reviewDate": "Nov 21, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "Deepgram provides a high quality transcription from audio recordings that we can count on to use in our system as well as for our enterprise clients. We've been using the transcription service for several months and it has worked consistently and reliably over that time. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "Deepgram has worked really well and our team really can't point to a dislike yet, despite using it for several months in a production capacity. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "We process a high volume of audio recordings from our clients' customer service and sales calls. Deepgram helps us reliably convert those recordings into high quality transcripts that we can confidently utilize in our system for our clients. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Arpit M.",
+                "authorTitle": "CEO and FounderSmall-Business(50 or fewer emp.)",
+                "stars": "5.0",
+                "authorLink": "https://www.g2.com/users/f6d409d2-222e-464b-836c-c6f388af8893",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Organic"
+                ],
+                "reviewText": "Efficient and Cost-Effective Speech-to-Text Solution",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10060920",
+                "reviewDate": "Aug 28, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "We\u2019ve been using Deepgram for our speech-to-text needs at SpeakX.ai, and we\u2019re extremely satisfied with its performance. Whether it\u2019s for real-time audio transcription or file-based audio transcription, Deepgram consistently delivers accurate and fast results, making it an essential part of our toolkit."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "While we\u2019re generally pleased with Deepgram\u2019s performance, we\u2019ve experienced some intermittent API failures, though these are rare. Additionally, we\u2019ve noticed inconsistent expiry times for API keys, which can be a bit inconvenient. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Deepgram is helping us with a reliable and fast speech-to-text conversion. By providing accurate transcriptions, it helps us analyze the spoken content rom our users. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Ryan C.",
+                "authorTitle": "Software EngineerSmall-Business(50 or fewer emp.)",
+                "stars": "5.0",
+                "authorLink": "https://www.g2.com/users/f0e16404-9cd0-4647-968a-14c572ae5337",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Review source: Organic"
+                ],
+                "reviewText": "Deepgram provides accurate and fast transcription for real-time applications",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10408414",
+                "reviewDate": "Oct 24, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "Deepgram offers incredibly fast multi-channel TTS services, which are perfect for handling multiple audio streams efficiently."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "The service can be a bit pricey for startups with tight budgets, especially if usage scales quickly. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Deepgram is solving the challenge of providing accurate and fast real-time transcription, which is essential for our business. Our interview copilot and mock interview features rely heavily on immediate, real-time feedback to guide users during their interview process. Deepgram\u2019s reliable multi-channel transcription allows us to maintain seamless interactions and deliver valuable insights instantly, improving user experience and overall product efficiency. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Verified User in Health, Wellness and FitnessInformation",
+                "authorTitle": "Small-Business(50 or fewer emp.)",
+                "stars": "4.5",
+                "authorLink": "",
+                "profileLabels": [
+                    "Information",
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Organic"
+                ],
+                "reviewText": "Great for healthcare applications",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-10616419",
+                "reviewDate": "Dec 06, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "Deepgram API has been a great for our healthcare application. Its real-time transcription is incredibly fast and accurate, enabling low-latency AI-patient conversations without interruptions. The API handles medical jargon effectively with their medical model. Specific words can also be boosted if needed. Integration was easy, and it scales effortlessly with our needs. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "Documentation can be more robust. We found some common use-cases with no ways to achieve it according to the documentation. Their Discord support was excellent though so we ended up getting custom help from their team to uncover undocumented functionalities. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "We needed a Speech-to-text solution that can handle real-time transcription. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Mukunda D.",
+                "authorTitle": "Co-Founder & CTO AISmall-Business(50 or fewer emp.)",
+                "stars": "4.5",
+                "authorLink": "https://www.g2.com/users/bbab4ae6-2323-4b9b-b7fc-f6df8bc6e80b",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Seller invite",
+                    "Incentivized Review"
+                ],
+                "reviewText": "DEEPGRAM ASR AND TTS REVIEW",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-9738569",
+                "reviewDate": "Jun 03, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "Deepgram has never stopped even after going leaps and bounds on the ASR side. They have shown stronger commitment with their latest TTS system called Aura which actually helps customers to stick to one company for both ASR and TTS. this is actually very helpful. They have lots of good documentation and this helps the developer community to get a quick start on their solutions. Ease of implementation starts with good documentation. Deepgram APIs and their simplistic approach towards the APIs even tho they are building complicated models to get state of the art Voice models actually makes it easy to use . Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "Their models and APIs are yet to give full feature of sentiment and emotion detections in real time speech. as of now its restricted to detecting and predicting emotions for offline audio files where as it will be more useful for real time scenarios. hope that feature comes soon. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Deepgram solves ASR and includes multiple language support with lowest latency. Lately they started the TTS models as well with the introduction of Aura and this seems to be promising. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Martin L.",
+                "authorTitle": "Customer Support RepresentativeHealth, Wellness and FitnessSmall-Business(50 or fewer emp.)",
+                "stars": "3.5",
+                "authorLink": "https://www.g2.com/users/cfe674b0-1dfd-4338-9e7a-9f14b60f458d",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Review source: Seller invite",
+                    "Incentivized Review"
+                ],
+                "reviewText": "Reliable solution for high transcription accuracy for customer interactions",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-9982108",
+                "reviewDate": "Aug 08, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "I especially like how the use of Deepgram brings out the transcription accuracy aspect. It does record even the most detailed interactions and this means our customer relations are much better. There are many useful features on it, such as real time processing and the language it supports. Moreover, their customer support helps us sort out any problems that we may come across. All in all, I can conclude that Deepgram has greatly benefited our work process and increased productivity. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "The main disadvantage of the Deepgram is that it has issues with transcriptions that contain the accent and can lead to misunderstandings in customer support. This results in time delay in the issue resolution processes and procedures. Also, the implementation was to some extent difficult and required more technical knowledge, which at first hindered our progress. Although these could be considered minor problems, they have once in a while impacted our efficiency. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Deepgram helps us without having to sit and manually try to decode the conversations customers have had on the phone with us. With the real time transcription feature, we can easily freeze the flow and transcribe the content captured about our services from the customers hence improving on the existing services. The process integration with our current applications means that we can optimize workflows and increase productivity of our teams. This has benefited our customers and enhanced the company\u2019s productivity by many folds. Review collected by and hosted on G2.com."
+                    }
+                ]
+            },
+            {
+                "autor": "Jeffrey P.",
+                "authorTitle": "Co-Founder / CEOSmall-Business(50 or fewer emp.)",
+                "stars": "4.5",
+                "authorLink": "https://www.g2.com/users/99bd0cf3-4c6e-409e-90ec-68694cc4c947",
+                "profileLabels": [
+                    "Validated Reviewer",
+                    "Verified Current User",
+                    "Review source: Seller invite",
+                    "Incentivized Review"
+                ],
+                "reviewText": "Great Product, and Really Great People",
+                "reviewLink": "https://www.g2.com/products/deepgram/reviews/deepgram-review-9692757",
+                "reviewDate": "May 23, 2024",
+                "reviewDetails": [
+                    {
+                        "question": "What do you like best about Deepgram?",
+                        "answer": "I have been using for 2+ years. Their product is very good and they are always coming out with improvements. We build video and audio accessibility products so having a good transcript / srt file is imperative. The support and sales people are very responsive and helpful. The pricing is very competitive and they have great programs for startup organizations. The integration points are well documented and the customer dashboard is easy to understand. We can quickly try out new options with little programming. Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What do you dislike about Deepgram?",
+                        "answer": "There isn't much that I don't like about Deepgram. Some of their models don't fit my use case, but I don't have to use them. I think they are very fair and helpful Review collected by and hosted on G2.com."
+                    },
+                    {
+                        "question": "What problems is Deepgram solving and how is that benefiting you?",
+                        "answer": "Our product, Ziotag, requires a transcript / srt file to generate the Table of Contents our clients count on. The Deepgram engine produces a very good srt file quickly and at a very fair price. The better the SRT file the better my product is going to perform. Review collected by and hosted on G2.com."
+                    }
+                ]
+            }
+        ],
+        "pagination": {
+            "currentPage": 1,
+            "nextPage": 2,
+            "totalPages": 27
+        }
+    }
+}

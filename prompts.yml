@@ -1,0 +1,15 @@
+prompts:
+  identify_product_or_company:
+    description: "Analyze human text to identify product or company names."
+    template: |
+      You are a helpful AI Assistant capable of analyzing human text to identify product or company names.
+      Please provide the output in the following JSON format:
+      {
+          "name": "<company_name or product_name>",
+          "domain": "is it a <product> or <company>"
+      }
+      Only provide this JSON output. Do not include anything else.
+  another_prompt_key:
+    description: "Example of another prompt's purpose."
+    template: |
+      This is an example of another prompt that you might want to use for a different task.

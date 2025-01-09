@@ -1,0 +1,76 @@
+{
+    "productName": "Deepgram",
+    "productLink": "https://www.g2.com/products/deepgram/reviews",
+    "productDescription": "Deepgram is a foundational AI company on a mission to understand human language. We give any developer access to the most advanced speech AI transcription and understanding with just an API call. Our models deliver the fastest, most accurate transcription alongside contextual features like summarization, sentiment analysis, and topic detection. Beyond that, developers can: \ud83d\udd0a Process live-streaming or pre-recorded audio \ud83c\udf0e Transcribe in dozens of languages \u2699\ufe0f Train custom models for unique use cases \ud83d\udd11 Access deep NLU with a unified API \ud83d\udcbb Build in any programming language with our SDKs \u2705 Deploy on-prem or on DG\u2019s managed cloud \ud83d\udcc8 Get scalable GPU infrastructure for training and inference Get started with $200 in free credit (up to 45,000 minutes) of free transcription and understanding.",
+    "starRating": "4.6",
+    "reviewsCount": 270,
+    "discussionsCount": 6,
+    "ratings": [
+        {
+            "rating": "5 star",
+            "count": 203
+        },
+        {
+            "rating": "4 star",
+            "count": 63
+        },
+        {
+            "rating": "3 star",
+            "count": 3
+        },
+        {
+            "rating": "2 star",
+            "count": 1
+        },
+        {
+            "rating": "1 star",
+            "count": 0
+        }
+    ],
+    "sentiments": {
+        "pros": [
+            {
+                "name": "Speed",
+                "count": 51
+            },
+            {
+                "name": "Accuracy",
+                "count": 32
+            },
+            {
+                "name": "Ease of Use",
+                "count": 31
+            },
+            {
+                "name": "Real-time Transcription",
+                "count": 26
+            },
+            {
+                "name": "API Usability",
+                "count": 22
+            }
+        ],
+        "cons": [
+            {
+                "name": "Improvement Needed",
+                "count": 19
+            },
+            {
+                "name": "Limited Language Support",
+                "count": 14
+            },
+            {
+                "name": "Poor Transcription Accuracy",
+                "count": 12
+            },
+            {
+                "name": "Inaccuracy",
+                "count": 7
+            },
+            {
+                "name": "Limited Options",
+                "count": 7
+            }
+        ]
+    }
+}
