@@ -1,0 +1,76 @@
+{
+    "productName": "Notion",
+    "productLink": "https://www.g2.com/products/notion/reviews",
+    "productDescription": "Notion is a connected workspace where your team can create docs, take notes, manage tasks, and organize your work \u2013 all in one place. And now, with Notion AI, you can augment your capabilities in new and unexpected ways. Leverage the power of AI right inside Notion, across all your notes and docs, without the need to jump between your work and a separate AI-powered tool.",
+    "starRating": "4.7",
+    "reviewsCount": 5938,
+    "discussionsCount": 14,
+    "ratings": [
+        {
+            "rating": "5 star",
+            "count": 4812
+        },
+        {
+            "rating": "4 star",
+            "count": 1018
+        },
+        {
+            "rating": "3 star",
+            "count": 88
+        },
+        {
+            "rating": "2 star",
+            "count": 6
+        },
+        {
+            "rating": "1 star",
+            "count": 14
+        }
+    ],
+    "sentiments": {
+        "pros": [
+            {
+                "name": "Ease of Use",
+                "count": 753
+            },
+            {
+                "name": "Features",
+                "count": 406
+            },
+            {
+                "name": "Organization",
+                "count": 360
+            },
+            {
+                "name": "AI Features",
+                "count": 238
+            },
+            {
+                "name": "Daily Use",
+                "count": 227
+            }
+        ],
+        "cons": [
+            {
+                "name": "Learning Curve",
+                "count": 329
+            },
+            {
+                "name": "Missing Features",
+                "count": 126
+            },
+            {
+                "name": "Lack of Features",
+                "count": 101
+            },
+            {
+                "name": "Limited Features",
+                "count": 98
+            },
+            {
+                "name": "Limited Customization",
+                "count": 96
+            }
+        ]
+    }
+}

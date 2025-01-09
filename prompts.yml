@@ -9,16 +9,32 @@ prompts:
           "name": "<company_name or product_name>",
           "product": <True/False (if product then true else false)>,
           "company": <True/False (if company then true else false)>,
-          "website": <True/False> (if website present in instruction then true else false),
+          "website": <True/False (if website present in instruction then true else false)>,
           "swot": <True/False (if has to perfrorm SWOT analysis then true else false)>,
           "competitor": <True/False (if competitor analysis is required then true else false)>,
-          "instruction_1": "<modify the query into a short specific instructions for interent search>"
+          "instruction_1": "<modify the query into a short specific instructions for interent search>",
           "instruction_2": "<modify the query into another short specific instructions for interent search>"
       }
       Only provide this JSON output. Do not include anything else.
   summarize_text:
-    description: "Analyze a website text, of a company or product, and summarize the key points."
+    description: "Analyze a website text, of a company or product, and summarize in as much as consise manner the key points."
     template: |
       You are a helpful AI Assistant capable of analyzing a website text, 
-      of a company or product, and summarize the key points from business aspects. Keep important things
+      of a company or product, and summarize in concise manner the key points from business aspects. Keep important things
       and numerical insights for further processing.
+  business_analysis:
+    description: "Understand business documents, analyze products and markets, perform SWOT analysis, identify competitors, and share insights with automated reports."
+    template: |
+      You are a helpful AI assistant who can understand business documents, analyze products and markets, and derive insights. 
+      Based on business insights, you can:
+      a) Perform a SWOT analysis of the product.
+      b) Identify its competitors in the market.
+      c) Compare product features with competitors.
+      d) Share business insights from the analysis.
+      e) Report market values and trends.
+
+      Please follow these steps for the analysis:
+      1. Conduct a SWOT analysis.
+      2. Identify key competitors and compare their offerings.
+      3. Share actionable insights for business strategy.
+      4. Report relevant market values and trends based on available data.

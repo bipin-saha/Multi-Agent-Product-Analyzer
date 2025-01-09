@@ -26,13 +26,17 @@ top_p = 1
 stream = True
 stop = None
 
-# Initialize QueryAnalyzerAgent
+### INSTRUCTION ANALYSIS ###
+
 processor = QueryAnalyzerAgent(api_key, llm_model, prompts_file)
-query = """Analyze the competitive landscape for AI-based writing assistants targeting academic users. 
+query = """Analyze the competitive landscape for AI-powered productivity and writing tools targeting academic users.
             Provide insights on market trends, feature gaps, pricing strategies, and suggest opportunities
-            for differentiation, backed by customer reviews and funding data from Grammarly."""
+            for differentiation, backed by customer reviews and funding data from Notion."""
 llm_result = processor.process_request(LLMmodel, domain, query, temperature, max_tokens, top_p, stream, stop, prompt_key)
 print(llm_result)
+
+### EXTRACTING G2 REVIEWS ###
+
 
 query = llm_result['name'] + " G2"
 max_search = 3
@@ -40,26 +44,28 @@ ddg_search = DuckDuckGoSearch(query, max_search)
 search_results = ddg_search.perform_search()
 g2valid = g2validator(json.loads(search_results))[0]
 
-# try:
-#         scraper = G2Scraper()
-#         product_url = g2valid
-#         print("Product URL:", product_url)
-#         reviews = scraper.fetch_reviews(product_url)
+try:
+        scraper = G2Scraper()
+        product_url = g2valid
+        print("Product URL:", product_url)
+        reviews = scraper.fetch_reviews(product_url)
 
-#         g2Result = {
-#         "productName": reviews['body']['productName'], "productLink": reviews['body']['productLink'], 
-#         "productDescription": reviews['body']['productDescription'], "starRating": reviews['body']['starRating'],
-#         "reviewsCount": reviews['body']['reviewsCount'], "discussionsCount": reviews['body']['discussionsCount'],
-#         "ratings": reviews['body']['ratings'], "sentiments": reviews['body']['sentiments']
-#     }
+        g2Result = {
+        "productName": reviews['body']['productName'], "productLink": reviews['body']['productLink'], 
+        "productDescription": reviews['body']['productDescription'], "starRating": reviews['body']['starRating'],
+        "reviewsCount": reviews['body']['reviewsCount'], "discussionsCount": reviews['body']['discussionsCount'],
+        "ratings": reviews['body']['ratings'], "sentiments": reviews['body']['sentiments']
+    }
 
-#         with open(os.path.join('scrapPages', 'conciseG2.json'), 'w') as json_file:
-#             json.dump(g2Result, json_file, indent=4)
+        with open(os.path.join('scrapPages', 'conciseG2.json'), 'w') as json_file:
+            json.dump(g2Result, json_file, indent=4)
 
-# except Exception as e:
-#     print(f"Error: {e}")
+except Exception as e:
+    print(f"Error: {e}")
 
 time.sleep(1)
+
+### EXTRACTING CONTENT FROM 1ST INSTRUCTION ###
 
 query = llm_result['instruction_1']
 max_search = 3
@@ -73,13 +79,17 @@ async def clean_all_content():
         print(f"Cleaning content for URL: {url}")
         cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
         await cleaner.clean_content()
-        summary_generator = SummaryGenerator(api_key, "gemma2-9b-it", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
+        summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
         summary_generator.generate_summary()
 
 # Run the asynchronous function
 asyncio.run(clean_all_content())
 
 time.sleep(1)
+
+
+### EXTRACTING CONTENT FROM 2ND INSTRUCTION ###
+
 
 query = llm_result['instruction_2']
 max_search = 3
@@ -95,7 +105,7 @@ async def clean_all_content_2():
         print(f"Cleaning content for URL: {url}")
         cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"))
         await cleaner.clean_content()
-        summary_generator = SummaryGenerator(api_key, "gemma2-9b-it", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"))
+        summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"))
         summary_generator.generate_summary()
 
 # Run the asynchronous function for instruction 2
