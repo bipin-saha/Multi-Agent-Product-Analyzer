@@ -1,27 +1,31 @@
-I've analyzed the website text and summarized the key points from a business aspect:
+Here is a concise summary of the key points from a business aspect:
 
-**Key Points:**
+**Overview**
 
-1. **Oracle NetSuite CRM Customer Share**: In 2024, the largest customer base for Oracle's NetSuite CRM comes from the professional services industry, accounting for 28% of NetSuite's customers.
-2. **Industry Breakdown**: The customer share of NetSuite CRM is broken down by vertical, with the top industries being:
-	* Professional services (28%)
-	* Wholesale and distribution (14%)
-	* Manufacturing (12%)
-	* Retail and e-commerce (10%)
-	* Financial services (8%)
-3. **Statista Account Options**: The website offers various account options, including:
-	* Basic Account (free): Limited access to free statistics
-	* Starter Account (£/month): Access to free and premium statistics
-	* Professional Account (£1,049/month): Access to free and premium statistics, reports, and market insights
-4. **Pricing**: The prices mentioned do not include sales tax, and the account requires an annual contract that will renew after one year to the regular list price.
-5. **Additional Features**: The website offers additional features, such as the ability to download statistics in various formats (XLS, PNG, PDF, PPT), access to detailed source references and background information, and the ability to mark statistics as favorites.
+* Trello is a web-based project management application used by 47,718 companies.
+* The companies using Trello are mostly found in the United States and in the Information Technology and Services industry.
 
-**Numerical Insights:**
+**Target Market**
 
-* 28%: The percentage of NetSuite's customers that come from the professional services industry
-* 14%: The percentage of NetSuite's customers that come from the wholesale and distribution industry
-* 12%: The percentage of NetSuite's customers that come from the manufacturing industry
-* 10%: The percentage of NetSuite's customers that come from the retail and e-commerce industry
-* 8%: The percentage of NetSuite's customers that come from the financial services industry
-* £1,908: The yearly price for a Professional Account
-* £1,049: The monthly price for a Professional Account
+* Companies with 10-50 employees and $1M-10M in revenue are the most common users of Trello.
+* The top industries that use Trello are Information Technology and Services (15%), Computer Software (11%), and Marketing and Advertising (7%).
+* The top countries that use Trello are the United States (42%), United Kingdom (8%), Brazil (7%), and France (5%).
+
+**Market Share and Competitors**
+
+* Trello has a market share of about 4.8% in the Enterprise Resource Planning (ERP) category.
+* Other major and competing products in this category include [not specified].
+
+**Company Size and Revenue Distribution**
+
+* 43% of Trello customers are small (<50 employees), 41% are medium-sized, and 17% are large (>1000 employees).
+* 67% of Trello customers have revenue less than $50M, 19% have revenue greater than $1000M, and 9% are medium-sized.
+
+**Sales and Marketing Opportunities**
+
+* Customize Trello users by location, employees, revenue, industry, and more to target sales and marketing goals.
+
+**Additional Information**
+
+* Enlyft provides data on companies that use Trello, with over 100 data fields per company at an average.
+* The cost of accessing this data depends on various factors, such as the number of records, number of products, and use of advanced filtering and search criteria.

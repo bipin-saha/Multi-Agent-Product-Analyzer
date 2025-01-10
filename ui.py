@@ -22,7 +22,8 @@ if os.name == "nt":
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 # Streamlit app setup
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Multi Agent Product Analyzer", layout="wide")
+st.markdown("<h2 style='text-align: center;'>Multi Agent Product Analyzer</h2>", unsafe_allow_html=True)
 
 # Initialize variables
 api_key = os.getenv("GROQ_API_KEY")
@@ -39,12 +40,15 @@ stop = None
 
 ### INSTRUCTION ANALYSIS ###
 query = st.text_input("Enter your query", "Show me business insights and market analysis for NetSuite.")
+# query = st.chat_input(key="input", placeholder="Ask your question")
 
 if st.button("Run Analysis"):
-    with st.spinner("Processing query..."):
+    with st.spinner("Analyzing query... and generating search recommendation"):
         processor = QueryAnalyzerAgent(api_key, llm_model, prompts_file)
         llm_result = processor.process_request(LLMmodel, domain, query, temperature, max_tokens, top_p, stream, stop, prompt_key)
-        st.write("Instruction Analysis Result:", llm_result)
+        st.write("Product Name:", llm_result['name'])
+        st.write("Search Recommendation:", llm_result['instruction_1'])
+        st.write("Search Recommendation:", llm_result['instruction_2'])
 
     ### EXTRACTING G2 REVIEWS ###
     query = llm_result['name'] + " G2"
@@ -54,6 +58,7 @@ if st.button("Run Analysis"):
     g2valid = g2validator(json.loads(search_results))[0]
 
     try:
+        st.write(f"Searching {llm_result['name']} in G2 Reviews")
         scraper = G2Scraper()
         product_url = g2valid
         st.write("Product URL:", product_url)
@@ -69,7 +74,7 @@ if st.button("Run Analysis"):
         with open(os.path.join('scrapPages', 'conciseG2.json'), 'w') as json_file:
             json.dump(g2Result, json_file, indent=4)
 
-        st.json(g2Result)
+        st.write("Extracted G2 Reviews of Product:", llm_result['name'])
 
     except Exception as e:
         st.error(f"Error: {e}")
@@ -77,6 +82,7 @@ if st.button("Run Analysis"):
     time.sleep(1)
 
     ### EXTRACTING CONTENT FROM 1ST INSTRUCTION ###
+    st.write("Searching Results for", llm_result['instruction_1'])
     query = llm_result['instruction_1']
     max_search = 3
     ddg_search = DuckDuckGoSearch(query, max_search)
@@ -86,7 +92,7 @@ if st.button("Run Analysis"):
     async def clean_all_content():
         for idx, result in enumerate(search_results):
             url = result['link']
-            st.write(f"Cleaning content for URL: {url}")
+            st.write(f"Generating Insights from: {url}")
             cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
             await cleaner.clean_content()
             summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
@@ -97,17 +103,18 @@ if st.button("Run Analysis"):
     time.sleep(1)
 
     ### EXTRACTING CONTENT FROM 2ND INSTRUCTION ###
+    st.write("Searching Results for", llm_result['instruction_2'])
     query = llm_result['instruction_2']
     max_search = 3
     ddg_search = DuckDuckGoSearch(query, max_search)
     search_results = ddg_search.perform_search()
     search_results = json.loads(search_results)
-    st.write("Search Result for Instruction 2:", search_results)
+    # st.write("Search Result for Instruction 2:", search_results)
 
     async def clean_all_content_2():
         for idx, result in enumerate(search_results):
             url = result['link']
-            st.write(f"Cleaning content for URL: {url}")
+            st.write(f"Generating Insights from: {url}")
             cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"))
             await cleaner.clean_content()
             summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
@@ -123,8 +130,14 @@ if st.button("Run Analysis"):
     with open("scrapPages/combinedReport.md", "w") as md_file:
         md_file.write(all_text)
 
-    st.write("Combined Report:", all_text)
+    # st.write("Combined Report:", all_text)
 
     final_result = SummaryGenerator(api_key, LLMmodel, domain, prompts_file, "scrapPages/combinedReport.md", "business_analysis", skip_chunking=True)
     x = final_result.generate_summary()
-    st.write("The Final Output:", x)
+    if x:
+        st.markdown(f"""
+        <div style="border: 2px solid #4CAF50; padding: 10px; border-radius: 5px;">
+            <h4>Generated Output:</h4>
+            <p>{x}</p>
+        </div>
+        """, unsafe_allow_html=True)

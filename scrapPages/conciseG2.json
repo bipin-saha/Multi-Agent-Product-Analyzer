@@ -1,75 +1,75 @@
 {
-    "productName": "NetSuite",
-    "productLink": "https://www.g2.com/products/netsuite/reviews",
-    "productDescription": "As the world's #1 cloud ERP solution for more than 20 years, NetSuite has helped businesses gain the visibility, control, and agility to build and grow a successful business. First focused on financials and ERP, we now provide an integrated system that also includes inventory management, HR, professional services automation, and omnichannel commerce, and is used by more than 41,000 customers in 219 countries.",
-    "starRating": "4.0",
-    "reviewsCount": 3618,
-    "discussionsCount": 28,
+    "productName": "Trello",
+    "productLink": "https://www.g2.com/products/trello/reviews",
+    "productDescription": "Spreadsheets, emails, and never-ending notifications are major teamwork blockers that affect today\u2019s business teams\u2014no matter their size. Project assignments, tasks, and daily to-do\u2019s get lost, transparency gets trumped, and people lose productivity in the shuffle. Not only do teams need to manage this constant overflow, but they also need to build projects, track progress, and achieve major business goals. What\u2019s needed is a clear view of the entire process to keep everyone on the same page. Introducing Trello: A visual collaboration tool that creates a shared perspective for your team on any project in a fun, flexible, and rewarding way. *Trello is for Everyone* From sales and marketing to HR and operations, teams can design and customize Trello to fit their unique needs and work styles. And with over 100+ integrations with other key tools like Google Drive, Slack, Jira and more, Trello is a living, breathing project hub of cross-team collaboration no matter where your work needs to happen. *Intuitively Simple* Go from idea to action in seconds: Trello\u2019s core features are as relatable is organizing sticky notes on a wall. There\u2019s no cumbersome onboarding process to get started, so getting group participation is easy. Log in, join a team and see progress across all the team\u2019s projects right away. *Take the Work Out of Work* Trello brings joy to teamwork by making it transparent and easily shareable across boards and teams. Users are empowered to make Trello their own (and have fun while doing it!) with features like board backgrounds, emoji reactions, and stickers. Trusted by millions, Trello powers teams all around the world. Explore which option is right for you: *Free* For individuals and teams looking to be more productive. *Standard* For teams that need to manage more work and scale collaboration. *Premium* For teams that need to track multiple projects and visualize work in a variety of ways. Best for teams up to 100. *Enterprise* For companies that need to connect work across teams and enhance org-wide controls, security, and support. Ideal for orgs with 100+ members.",
+    "starRating": "4.4",
+    "reviewsCount": 13652,
+    "discussionsCount": 94,
     "ratings": [
         {
             "rating": "5 star",
-            "count": 1774
+            "count": 8756
         },
         {
             "rating": "4 star",
-            "count": 1345
+            "count": 3970
         },
         {
             "rating": "3 star",
-            "count": 297
+            "count": 738
         },
         {
             "rating": "2 star",
-            "count": 80
+            "count": 136
         },
         {
             "rating": "1 star",
-            "count": 122
+            "count": 52
         }
     ],
     "sentiments": {
         "pros": [
             {
                 "name": "Ease of Use",
-                "count": 663
+                "count": 262
             },
             {
-                "name": "Customizability",
-                "count": 348
+                "name": "Project Management",
+                "count": 139
             },
             {
-                "name": "Features",
-                "count": 323
+                "name": "Task Management",
+                "count": 129
             },
             {
-                "name": "Customization",
-                "count": 318
+                "name": "Organization",
+                "count": 123
             },
             {
-                "name": "Functionality",
-                "count": 311
+                "name": "Team Collaboration",
+                "count": 116
             }
         ],
         "cons": [
             {
-                "name": "Learning Curve",
-                "count": 349
-            },
-            {
-                "name": "Learning Difficulty",
-                "count": 232
+                "name": "Limited Features",
+                "count": 76
             },
             {
                 "name": "Missing Features",
-                "count": 230
+                "count": 70
             },
             {
-                "name": "Limited Customization",
-                "count": 213
+                "name": "Limited Functionality",
+                "count": 65
             },
             {
-                "name": "Improvement Needed",
-                "count": 210
+                "name": "Not Intuitive",
+                "count": 49
+            },
+            {
+                "name": "Lack of Integration",
+                "count": 31
             }
         ]
     }
