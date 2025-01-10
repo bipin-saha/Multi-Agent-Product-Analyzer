@@ -1,32 +1,27 @@
-Here is a concise summary of the key points from a business aspect:
+I've analyzed the website text and summarized the key points from a business aspect:
 
-**Product/Service:** Thesify, an AI-powered academic writing assistant
+**Key Points:**
 
-**Target Market:** Academics, researchers, students, and early-career researchers in various fields
-
-**Key Features:**
-
-1. Expert Feedback: Instant feedback on essays, theses, dissertations, and research papers
-2. Effortless Citation: Find and cite academic sources with ease
-3. Paper Digest: Summarize key points from research articles instantly
-4. Journal & Conference Finder: Identify the best venues to publish and present
-5. Agile Editor: Rearrange text and track ideas with in-document notes
-
-**Benefits:**
-
-1. Saves time: Instant feedback, effortless citation, and paper digest features
-2. Improves writing quality: Expert feedback, citation assistance, and agile editor features
-3. Increases confidence: Provides personalized recommendations for journal and conference submissions
-4. Enhances productivity: Streamlines the writing process, allowing users to focus on their ideas
-
-**Competitive Advantage:** Thesify is specifically designed for academics, focusing on supporting students and researchers in producing polished, academically rigorous work, unlike general-purpose conversational AI tools like ChatGPT.
-
-**Business Model:** Free Forever, with no credit card required. Users can sign up with their university email to receive additional free credits.
-
-**Marketing Strategy:** Emphasize the benefits of saving time, improving writing quality, and increasing confidence, while highlighting the competitive advantage of Thesify's academic focus.
+1. **Oracle NetSuite CRM Customer Share**: In 2024, the largest customer base for Oracle's NetSuite CRM comes from the professional services industry, accounting for 28% of NetSuite's customers.
+2. **Industry Breakdown**: The customer share of NetSuite CRM is broken down by vertical, with the top industries being:
+	* Professional services (28%)
+	* Wholesale and distribution (14%)
+	* Manufacturing (12%)
+	* Retail and e-commerce (10%)
+	* Financial services (8%)
+3. **Statista Account Options**: The website offers various account options, including:
+	* Basic Account (free): Limited access to free statistics
+	* Starter Account (£/month): Access to free and premium statistics
+	* Professional Account (£1,049/month): Access to free and premium statistics, reports, and market insights
+4. **Pricing**: The prices mentioned do not include sales tax, and the account requires an annual contract that will renew after one year to the regular list price.
+5. **Additional Features**: The website offers additional features, such as the ability to download statistics in various formats (XLS, PNG, PDF, PPT), access to detailed source references and background information, and the ability to mark statistics as favorites.
 
 **Numerical Insights:**
 
-1. Over 10,000 academics at leading universities trust Thesify
-2. 200+ million high-quality references available for citation
-3. 200+ million peer-reviewed journal articles in the database for paper digest feature
+* 28%: The percentage of NetSuite's customers that come from the professional services industry
+* 14%: The percentage of NetSuite's customers that come from the wholesale and distribution industry
+* 12%: The percentage of NetSuite's customers that come from the manufacturing industry
+* 10%: The percentage of NetSuite's customers that come from the retail and e-commerce industry
+* 8%: The percentage of NetSuite's customers that come from the financial services industry
+* £1,908: The yearly price for a Professional Account
+* £1,049: The monthly price for a Professional Account

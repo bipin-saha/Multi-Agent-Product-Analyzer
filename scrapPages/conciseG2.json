@@ -1,75 +1,75 @@
 {
-    "productName": "Notion",
-    "productLink": "https://www.g2.com/products/notion/reviews",
-    "productDescription": "Notion is a connected workspace where your team can create docs, take notes, manage tasks, and organize your work \u2013 all in one place. And now, with Notion AI, you can augment your capabilities in new and unexpected ways. Leverage the power of AI right inside Notion, across all your notes and docs, without the need to jump between your work and a separate AI-powered tool.",
-    "starRating": "4.7",
-    "reviewsCount": 5938,
-    "discussionsCount": 14,
+    "productName": "NetSuite",
+    "productLink": "https://www.g2.com/products/netsuite/reviews",
+    "productDescription": "As the world's #1 cloud ERP solution for more than 20 years, NetSuite has helped businesses gain the visibility, control, and agility to build and grow a successful business. First focused on financials and ERP, we now provide an integrated system that also includes inventory management, HR, professional services automation, and omnichannel commerce, and is used by more than 41,000 customers in 219 countries.",
+    "starRating": "4.0",
+    "reviewsCount": 3618,
+    "discussionsCount": 28,
     "ratings": [
         {
             "rating": "5 star",
-            "count": 4812
+            "count": 1774
         },
         {
             "rating": "4 star",
-            "count": 1018
+            "count": 1345
         },
         {
             "rating": "3 star",
-            "count": 88
+            "count": 297
         },
         {
             "rating": "2 star",
-            "count": 6
+            "count": 80
         },
         {
             "rating": "1 star",
-            "count": 14
+            "count": 122
         }
     ],
     "sentiments": {
         "pros": [
             {
                 "name": "Ease of Use",
-                "count": 753
+                "count": 663
+            },
+            {
+                "name": "Customizability",
+                "count": 348
             },
             {
                 "name": "Features",
-                "count": 406
+                "count": 323
             },
             {
-                "name": "Organization",
-                "count": 360
+                "name": "Customization",
+                "count": 318
             },
             {
-                "name": "AI Features",
-                "count": 238
-            },
-            {
-                "name": "Daily Use",
-                "count": 227
+                "name": "Functionality",
+                "count": 311
             }
         ],
         "cons": [
             {
                 "name": "Learning Curve",
-                "count": 329
+                "count": 349
+            },
+            {
+                "name": "Learning Difficulty",
+                "count": 232
             },
             {
                 "name": "Missing Features",
-                "count": 126
-            },
-            {
-                "name": "Lack of Features",
-                "count": 101
-            },
-            {
-                "name": "Limited Features",
-                "count": 98
+                "count": 230
             },
             {
                 "name": "Limited Customization",
-                "count": 96
+                "count": 213
+            },
+            {
+                "name": "Improvement Needed",
+                "count": 210
             }
         ]
     }

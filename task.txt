@@ -8,3 +8,7 @@
 # SWOT Analysis LLM                                             Done
 # Competitor Feature Comparison LLM
 # Business Recommendation
+
+# Crunchbase Agent
+# Competitor Agent with Product
+# Google Search Agent for Market
