@@ -5,14 +5,18 @@ import asyncio
 import nest_asyncio
 import streamlit as st
 from pydantic import BaseModel, ValidationError
-from agents.queryAnalyzerAgent import QueryAnalyzerAgent
-from agents.duckSearchAgent import DuckDuckGoSearch
-from agents.scrapperAgent import WebContentCleaner
+
 from agents.g2ReviewAgent import G2Scraper
-from modules.g2validator import g2validator
-from modules.llamSummarizer import SummaryGenerator
+from agents.scrapperAgent import WebContentCleaner
+from agents.duckSearchAgent import DuckDuckGoSearch
+from agents.queryAnalyzerAgent import QueryAnalyzerAgent
+
 from modules.textCombiner import FileReader
-from modules.utils import cleanSearchContentA, cleanSearchContentB 
+from modules.llamSummarizer import SummaryGenerator
+from modules.crunchbaseAggregator import crunchbase_aggregator
+from modules.validator import g2validator, crunchbaseValidator
+from modules.utils import cleanSearchContentA, cleanSearchContentB, cleanSearchContentC
+
 
 # Apply nest_asyncio for compatibility with Streamlit
 nest_asyncio.apply()
@@ -22,8 +26,8 @@ if os.name == "nt":
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
 # Streamlit app setup
-st.set_page_config(page_title="Multi Agent Product Analyzer", layout="wide")
-st.markdown("<h2 style='text-align: center;'>Multi Agent Product Analyzer</h2>", unsafe_allow_html=True)
+st.set_page_config(page_title="AIAgentInsight", layout="wide")
+st.markdown("<h2 style='text-align: center;'>AIAgentInsight</h2>", unsafe_allow_html=True)
 
 # Initialize variables
 api_key = os.getenv("GROQ_API_KEY")
@@ -63,17 +67,12 @@ if st.button("Run Analysis", type="primary"):
                         max_search = 3
                         ddg_search = DuckDuckGoSearch(query, max_search)
                         search_results = ddg_search.perform_search()
-                        print("Search Results:", search_results)
                         g2valid = g2validator(json.loads(search_results))
-                        print("G2 Valid:", g2valid)
-                        print("G2 Valid Type:", type(g2valid))
                         if isinstance(g2valid, list):
                             st.toast(f"Fetching: {g2valid[0]}")
                             try:
-                                # st.write(f"Searching {llm_result['name']} in G2 Reviews")
                                 scraper = G2Scraper()
                                 product_url = g2valid[0]
-                                # st.write("Product URL:", product_url)
                                 reviews = scraper.fetch_reviews(product_url)
 
                                 g2Result = {
@@ -90,7 +89,6 @@ if st.button("Run Analysis", type="primary"):
                                     status.update(label="Extracted G2 Reviews!", state="complete", expanded=True)
                                 else:
                                     st.error("Error extracting G2 reviews.")
-                                # st.write("Extracted G2 Reviews of Product:", llm_result['name'])
 
                             except Exception as e:
                                 st.error(f"Error: {e}")
@@ -98,9 +96,27 @@ if st.button("Run Analysis", type="primary"):
                         else:
                             st.error(f"{llm_result['name']} Not Found in G2 Reviews")
 
-                        time.sleep(1)
+                with col2:
+                    with st.status("Extracting Insights Crunchbase", expanded=True) as status:
+                        query = llm_result['name'] + " Crunchbase"
+                        max_search = 3
+                        ddg_search = DuckDuckGoSearch(query, max_search)
+                        search_results = ddg_search.perform_search()
+                        cbValid = crunchbaseValidator(json.loads(search_results))
+                        if isinstance(cbValid, list):
+                            st.toast(f"Fetching: {cbValid[0]}")
+                            cbValid = crunchbase_aggregator(cbValid)
+                            try:
+                                asyncio.run(cleanSearchContentC(cbValid, api_key, domain, prompts_file, crunhbase=True))                                    
+                            except Exception as e:
+                                st.error("Error in Web Search.")
 
-                ### EXTRACTING CONTENT FROM 1ST INSTRUCTION ###
+                            status.update(label=f"Extracted Crunchbase Info)", state="complete", expanded=True)
+                            # print(cbValid)
+
+                time.sleep(1)
+
+                ## EXTRACTING CONTENT FROM 1ST INSTRUCTION ###
                 with col3:
                     with st.status(f"Searching {llm_result['instruction_1']}", expanded=True) as status:
                         query = llm_result['instruction_1']
@@ -120,7 +136,6 @@ if st.button("Run Analysis", type="primary"):
                 ### EXTRACTING CONTENT FROM 2ND INSTRUCTION ###
                 with col3:
                     with st.status(f"Searching {llm_result['instruction_2']}", expanded=True) as status:
-                        # st.write("Searching Results for", llm_result['instruction_2'])
                         query = llm_result['instruction_2']
                         max_search = 3
                         ddg_search = DuckDuckGoSearch(query, max_search)
@@ -143,8 +158,6 @@ if st.button("Run Analysis", type="primary"):
                         # Write the combined text to a .md file
                         with open("scrapPages/combinedReport.md", "w") as md_file:
                             md_file.write(all_text)
-
-                        # st.write("Combined Report:", all_text)
 
                         final_result = SummaryGenerator(api_key, LLMmodel, domain, prompts_file, "scrapPages/combinedReport.md", "business_analysis", skip_chunking=True)
                         x = final_result.generate_summary()

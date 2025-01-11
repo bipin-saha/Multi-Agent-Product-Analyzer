@@ -90,13 +90,13 @@ class WebContentCleaner:
             except Exception as e:
                 print(f"Error during web crawling: {e}")
 
-# if __name__ == "__main__":
-#     # Example usage: User provides file path for fit markdown
-#     url = "https://www.trustpilot.com/review/www.grammarly.com"
-#     fit_markdown_path = input("Enter the file path for fit markdown output: ")
+if __name__ == "__main__":
+    # Example usage: User provides file path for fit markdown
+    url = "https://www.crunchbase.com/organization/tesla-motors"
+    fit_markdown_path = input("Enter the file path for fit markdown output: ")
 
-#     # Instantiate the cleaner with the target URL and file path
-#     cleaner = WebContentCleaner(url=url, fit_markdown_path=fit_markdown_path)
+    # Instantiate the cleaner with the target URL and file path
+    cleaner = WebContentCleaner(url=url, fit_markdown_path=fit_markdown_path)
 
-#     # Run the cleaning process asynchronously
-#     asyncio.run(cleaner.clean_content())
+    # Run the cleaning process asynchronously
+    asyncio.run(cleaner.clean_content())

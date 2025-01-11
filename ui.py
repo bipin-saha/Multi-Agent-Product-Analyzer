@@ -10,7 +10,7 @@ from agents.queryAnalyzerAgent import QueryAnalyzerAgent
 from agents.duckSearchAgent import DuckDuckGoSearch
 from agents.scrapperAgent import WebContentCleaner
 from agents.g2ReviewAgent import G2Scraper
-from modules.g2validator import g2validator
+from modules.validator import g2validator
 from modules.llamSummarizer import SummaryGenerator
 from modules.textCombiner import FileReader
 

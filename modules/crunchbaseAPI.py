@@ -60,12 +60,12 @@ def scrape_data(response):
   print(f"An error occurred: {e}")
   return {}
 
-if __name__ == "__main__":
- # Specify the Crunchbase page URL to scrape
- page_url = 'https://www.crunchbase.com/organization/zepto-29b1'
+# if __name__ == "__main__":
+#  # Specify the Crunchbase page URL to scrape
+#  page_url = 'https://www.crunchbase.com/organization/zepto-29b1'
 
- # Specify your Crawlbase token. Use the JavaScript token for Crunchbase
- api_token = 'Crawlbase_Token'
+#  # Specify your Crawlbase token. Use the JavaScript token for Crunchbase
+#  api_token = 'Crawlbase_Token'
 
- # Call the crawl function
- crawl(page_url, "0SDhZLN9MIg61lODrMcBQw")
+#  # Call the crawl function
+#  crawl(page_url, "API Key")

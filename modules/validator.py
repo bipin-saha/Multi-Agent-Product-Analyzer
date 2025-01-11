@@ -20,6 +20,30 @@ def g2validator(json_data):
     
     except Exception as e:
         return f"An error occurred: {str(e)}"
+    
+
+def crunchbaseValidator(json_data):
+    """
+    Validate Crunchbase links in the given JSON data.
+
+    :param json_data: List of dictionaries containing 'title' and 'link'.
+    :return: List of links that meet the validation criteria.
+    """
+    try:
+        valid_links = []
+        for item in json_data:
+            link = item.get("link", "")
+            # Check if the link starts with 'https://www.crunchbase.com/organization/'
+            if link.startswith("https://www.crunchbase.com/organization/"):
+                valid_links.append(link)
+        
+        if valid_links:
+            return valid_links
+        else:
+            return "No valid Crunchbase links found."
+    
+    except Exception as e:
+        return f"An error occurred: {str(e)}"
 
 # # Example JSON input
 # json_input = [

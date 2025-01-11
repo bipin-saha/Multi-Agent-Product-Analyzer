@@ -37,7 +37,7 @@ def run_processing(query, max_search, api_key, domain, prompts_file):
     asyncio.run(process_search_and_generate_summary(query, max_search, api_key, domain, prompts_file))
 
 
-async def cleanSearchContentA(search_results,api_key, domain, prompts_file):
+async def cleanSearchContentA(search_results, api_key, domain, prompts_file):
         for idx, result in enumerate(search_results):
             url = result['link']
             st.toast(f"Enriching Knowledge Base from: {url}")
@@ -51,7 +51,22 @@ async def cleanSearchContentB(search_results,api_key, domain, prompts_file):
         for idx, result in enumerate(search_results):
             url = result['link']
             st.toast(f"Enriching Knowledge Base from: {url}")
-            cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
+            cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"))
             await cleaner.clean_content()
-            summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
+            summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_2_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
             summary_generator.generate_summary()
+
+async def cleanSearchContentC(search_results, api_key, domain, prompts_file, crunhbase):
+        if crunhbase == True:
+            for idx, result in enumerate(search_results):
+                url = result
+                st.toast(f"Enriching Knowledge Base from: {url}")
+                print("Before Cleaning")
+                print("Type of URL: ", type(url))
+                markdownPath = os.path.join("scrapPages", f"Crunchbase_Scrap_{idx+1}.md")
+                cleaner = WebContentCleaner(url=url, fit_markdown_path=markdownPath)
+                print("After Cleaning")
+                await cleaner.clean_content()
+                print("Finished Clearning")
+                summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, markdownPath, 'summarize_text', skip_chunking=False)
+                summary_generator.generate_summary()
