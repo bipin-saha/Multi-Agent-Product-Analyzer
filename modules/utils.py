@@ -2,6 +2,7 @@ import json
 import os
 import asyncio
 import time
+import streamlit as st
 from agents.duckSearchAgent import DuckDuckGoSearch
 from agents.scrapperAgent import WebContentCleaner
 from modules.llamSummarizer import SummaryGenerator
@@ -34,3 +35,23 @@ async def process_search_and_generate_summary(query, max_search, api_key, domain
 # Function to initiate the process
 def run_processing(query, max_search, api_key, domain, prompts_file):
     asyncio.run(process_search_and_generate_summary(query, max_search, api_key, domain, prompts_file))
+
+
+async def cleanSearchContentA(search_results,api_key, domain, prompts_file):
+        for idx, result in enumerate(search_results):
+            url = result['link']
+            st.toast(f"Enriching Knowledge Base from: {url}")
+            cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
+            await cleaner.clean_content()
+            summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
+            summary_generator.generate_summary()
+
+
+async def cleanSearchContentB(search_results,api_key, domain, prompts_file):
+        for idx, result in enumerate(search_results):
+            url = result['link']
+            st.toast(f"Enriching Knowledge Base from: {url}")
+            cleaner = WebContentCleaner(url=url, fit_markdown_path=os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"))
+            await cleaner.clean_content()
+            summary_generator = SummaryGenerator(api_key, "llama3-70b-8192", domain, prompts_file, os.path.join("scrapPages", f"LLM_Instruction_1_Scrap_{idx+1}.md"), 'summarize_text', skip_chunking=False)
+            summary_generator.generate_summary()

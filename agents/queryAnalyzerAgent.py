@@ -67,11 +67,10 @@ class QueryAnalyzerAgent:
         validated_output = None
         result_json = None
         prompt_template = self.get_prompt_template(prompt_key)
-
         while attempts < max_attempts:
-            result = self.call_llm(LLMmodel, domain, query, temperature, max_tokens, top_p, stream, stop, prompt_template)
-
+            
             try:
+                result = self.call_llm(LLMmodel, domain, query, temperature, max_tokens, top_p, stream, stop, prompt_template)
                 result_json = json.loads(result)
                 validated_output = self.ProductCompanyOutput(**result_json)
                 break  # Exit the loop if validation is successful

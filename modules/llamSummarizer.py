@@ -32,8 +32,14 @@ class SummaryGenerator:
 
     def _read_user_content(self):
         """Reads the user content from the markdown file with correct encoding."""
-        with open(self.user_content_file, 'r', encoding='utf-8') as file:
-            return file.read()
+        try:
+            # Attempt to read the file with UTF-8 encoding
+            with open(self.user_content_file, 'r', encoding='utf-8') as file:
+                return file.read()
+        except UnicodeDecodeError:
+            # Fallback to a more forgiving encoding
+            with open(self.user_content_file, 'r', encoding='latin-1') as file:
+                return file.read()
 
     def _line_count(self, text):
         """Returns the number of lines in the provided text."""

@@ -2,7 +2,7 @@ prompts:
   identify_product_or_company:
     description: "Analyze human text to identify product or company names, their type, and related factors."
     template: |
-      You are a helpful AI Assistant capable of analyzing human text to identify is it a company or product from the names, 
+      You are a helpful AI Assistant capable of analyzing human text to identify is it a company or product from the names or website, 
       and provide additional insights are they present in the instruction.
       Please provide the output in the following JSON format:
       {

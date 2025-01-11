@@ -7,13 +7,19 @@ def g2validator(json_data):
     :param json_data: List of dictionaries containing 'title' and 'link'.
     :return: List of links that meet the validation criteria.
     """
-    valid_links = []
-    for item in json_data:
-        link = item.get("link", "")
-        # Check if the main domain is 'www.g2.com' and it ends with '/reviews'
-        if "www.g2.com" in link and link.endswith("/reviews"):
-            valid_links.append(link)
-    return valid_links
+    try:
+        valid_links = []
+        for item in json_data:
+            link = item.get("link", "")
+            # Check if the main domain is 'www.g2.com' and it ends with '/reviews'
+            if "www.g2.com" in link and link.endswith("/reviews"):
+                valid_links.append(link)
+                return valid_links
+            else:
+                return "No valid G2 links found."
+    
+    except Exception as e:
+        return f"An error occurred: {str(e)}"
 
 # # Example JSON input
 # json_input = [
