@@ -30,16 +30,21 @@
 3. **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
-4. **Set Up Environment Variables:**
+
+4. **Run Setup Command:**
+      After installation, set up the required Playwright browsers by executing:
+      ```bash
+      crawl4ai-setup
+5. **Set Up Environment Variables:**
     Create a `.env` file in the project root directory and define the following variables:
     ```bash
     GROQ_API_KEY=your_api_key_here
     CRAWLBASE_API_KEY=your_api_key_here
-5. **Run the Application:**
+6. **Run the Application:**
     Start the Streamlit application:
     ```bash
     streamlit run app.py
-6. **Access the Application:**
+7. **Access the Application:**
 Streamlit will provide a URL in the terminal. Copy the URL (e.g., http://localhost:8501) and paste it into your browser to access the app.
 
 
